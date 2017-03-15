@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- custom Link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Calculator -->
+     <section id="Calculator">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+            <div class="calculator_body">
+              <form name="Calculator_form">
+                <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+                  <h1 class="text-center">1) Calculator</h1>
+                  <input type="text" name="displayCal" class="bg text-right">
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xsm-3 col-xs-3 first_row">
+                  <button type="button" onclick="ClickPlus()">+</button>
+                  <button type="button" onclick="ClickMinus()">-</button>
+                  <button type="button" onclick="ClickMulti()">*</button>
+                  <button type="button" onclick="ClickDevid()">/</button>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xsm-3 col-xs-3 first_row">
+                  <button type="button" onclick="ClickOne()">1</button>
+                  <button type="button" onclick="ClickTwo()">2</button>
+                  <button type="button" onclick="ClickThree()">3</button>
+                  <button type="button" onclick="ClickFour()">4</button>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xsm-3 col-xs-3 first_row">
+                  <button type="button" onclick="ClickFive()">5</button>
+                  <button type="button" onclick="ClickSix()">6</button>
+                  <button type="button" onclick="ClickSeven()">7</button>
+                  <button type="button" onclick="ClickEight()">8</button>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xsm-3 col-xs-3 first_row">
+                  <button type="button" onclick="ClickNine()">9</button>
+                  <button type="button" onclick="ClickZero()">0</button>
+                  <button type="button" onclick="ClickEqual()">=</button>
+                  <button type="button" onclick="ClickDelete()">C</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section id="Form_validation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+            <div class="form_body">
+              <h1 class="text-center">2) Form Validation</h1>
+              <form name="Signup">
+                <div class="col-md-6 col-sm-6 col-xsm-6 col-xs-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="fname" placeholder="First Name*">
+                  </div>                  
+                </div>
+                <div class="col-md-6 col-sm-6 col-xsm-6 col-xs-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="lname" placeholder="Last Name*">
+                  </div>                  
+                </div>
+                <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="mail" placeholder="Email*">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="pw" placeholder="Password*">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="repw" placeholder="Retype Password*">
+                </div>
+                <button type="button" class="btn btn-default" onclick="clickUp()">Submit</button>
+                  <h2 id="Error"></h2>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Palindrome -->
+    <section id="Palindrome"> 
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+            <div class="palindrome_body">
+              <h1 class="text-center">3) Palindrome</h1>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">"Check Palindrome"</label>
+                   <input type="text" class="form-control text-center" placeholder="Input Any Number*" id="palindrome_link">
+                <button type="button" class="btn btn-default" onclick="PClick()">Check it!</button>
+                </div>
+                <div class="palimdrome_show">
+                  <h2 id="palindrome_result"></h2>
+                </div>
+              </form> 
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>  
+
+    <!-- Multiplication table -->
+    <section id="namota">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xsm-12 col-xs-12">
+            <h1 class="text-center">4) Multiplication table</h1>
+            <div class="namota_body">
+              <form>
+                <div class="form-group">
+                   <input type="text" class="form-control text-center" placeholder="Enter Number*" id="namota_link">
+                <button type="button" class="btn btn-default" onclick="NClick()">Multiplication table</button>
+                </div>
+                <div class="namota_show">
+                  <h2 id="namota_result"></h2>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+      // Calculator
+      function ClickOne(){
+        document.Calculator_form.displayCal.value +=1;
+      }
+      function ClickTwo(){
+        document.Calculator_form.displayCal.value +=2;
+      }
+      function ClickThree(){
+        document.Calculator_form.displayCal.value +=3;
+      }
+      function ClickFour(){
+        document.Calculator_form.displayCal.value +=4;
+      }
+      function ClickFive(){
+        document.Calculator_form.displayCal.value +=5;
+      }
+      function ClickSix(){
+        document.Calculator_form.displayCal.value +=6;
+      }
+      function ClickSeven(){
+        document.Calculator_form.displayCal.value +=7;
+      }
+      function ClickEight(){
+        document.Calculator_form.displayCal.value +=8;
+      }
+      function ClickNine(){
+        document.Calculator_form.displayCal.value +=9;
+      }
+      function ClickZero(){
+        document.Calculator_form.displayCal.value +=0;
+      }
+      function ClickPlus(){
+        document.Calculator_form.displayCal.value +="+";
+      }
+      function ClickMinus(){
+        document.Calculator_form.displayCal.value +="-";
+      }
+      function ClickMulti(){
+        document.Calculator_form.displayCal.value +="*";
+      }
+      function ClickDevid(){
+        document.Calculator_form.displayCal.value +="/";
+      }
+      function ClickEqual(){
+        var result=eval(document.Calculator_form.displayCal.value);
+        document.Calculator_form.displayCal.value=result;
+      }
+      function ClickDelete(){
+        document.Calculator_form.displayCal.value =" ";
+      }
+
+
+      // form validation
+      function clickUp(){
+        var fn=document.Signup.fname.value;
+        var ln=document.Signup.lname.value;
+        var ma=document.Signup.mail.value;
+        var pass=document.Signup.pw.value;
+        var rpass=document.Signup.repw.value;
+
+        if(fn=="" || ln==""|| ma=="" || pass=="" || rpass==""){
+          document.getElementById("Error").innerHTML="error!*";
+        }
+      }
+
+      //Palindrome
+      function PClick(){
+        var my_name=document.getElementById("palindrome_link").value;
+        var rev_name="";
+        var long=my_name.length;
+        for(var i=long;i>=0;i--){
+          rev_name=rev_name + my_name.charAt(i);
+        }
+        if(rev_name == my_name){
+          document.getElementById("palindrome_result").innerHTML="Palindrome";
+        }
+        else{
+          document.getElementById("palindrome_result").innerHTML="Not Palindrome";
+        }
+
+      }
+
+      //Namota
+      function NClick(){
+        var my_namota=document.getElementById("namota_link").value;
+        var namota_show=document.getElementById('namota_result');
+        var a=0;
+        for(var i=1;i<=10;i++){
+          a=my_namota*i;
+          namota_show.innerHTML=(my_namota+" "+"*"+" "+i+" = "+a+"</br>");
+        }
+      }
+
+    </script>
+  </body>
+</html>

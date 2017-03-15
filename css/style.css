@@ -1,0 +1,72 @@
+#Calculator{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.bg{
+
+	background: #C4C5C4;
+}
+.calculator_body{
+}
+.calculator_body form{
+	width: 50%;
+	margin: 0 auto;
+	background: #C3C4C3;
+}
+.calculator_body form input{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.first_row{
+	width: 100%;
+	padding-top: 4px;
+}
+button{
+    width: 24.44%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+/*From Validation*/
+#Form_validation{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.form_body form{
+	width: 50%;
+	margin: 0 auto;
+	background: #C3C4C3;
+}
+.form_body h2{
+    color: red;	
+}
+.form-group {
+	
+}
+
+
+/*Palindrome*/
+.palindrome_body form{
+	width: 47.7%;
+	margin: 0 auto;
+	background: #C3C4C3;
+}
+.palindrome_body input{
+
+}
+.palimdrome_show h2{
+    color: green;
+}
+
+/*Namota*/
+.namota_body form{
+	width: 47.7%;
+	margin: 0 auto;
+	background: #C3C4C3;
+}
+.namota_body h2{
+	color: green;
+}
